@@ -59,6 +59,13 @@ class BFS:
         
         plt.rcParams["figure.figsize"] = (12, 4)
         
+        min_Q = min(Q)
+        j_optimal = Q.index(min_Q)
+        
+        plt.plot(j_optimal+1, min_Q, 'ro', color = 'red', label = 'best Q', ms = 8.0)
+        
+        plt.legend()
+        
         plt.show()
     
     # ------------------------------------------------------------------------- 
